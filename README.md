@@ -49,7 +49,7 @@
     }
 ```
 <br/>
-获取本地缓存的图片
+获取本地缓存的图片<br/>
 ```java
     public Bitmap getBitmap(String url) {
         return BitmapFactory.decodeFile(getStorageDirectory() + File.separator + getFileName(url));
@@ -72,7 +72,7 @@
     }
 ```
 <br/>
-当内存缓存和网络缓存中不存在，就去网络加载
+当内存缓存和网络缓存中不存在，就去网络加载<br/>
 ```
     public void downLoader(final String url, final ImageLoaderlistener loaderlistener) {
         if (url != null) {
