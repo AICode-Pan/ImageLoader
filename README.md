@@ -1,10 +1,10 @@
 ## 简介
 实现图片三级缓存<br/>
-*内存缓存：优先加载，速度最快
-*本地缓存：次优先加载，速度较快
-*网络缓存：最后加载，速度较慢
+* 内存缓存：优先加载，速度最快
+* 本地缓存：次优先加载，速度较快
+* 网络缓存：最后加载，速度较慢
 
-###内存缓存
+### 内存缓存
 获取系统分配给应用的最大内存。取一部分用来进行图片缓存
 ```java
     private ImageLoader(Context context) {
@@ -28,7 +28,7 @@
     }
 ```
 
-###本地缓存
+### 本地缓存
 本地在应用的目录下生成一个img文件夹，用来存放本地缓存的图片
 ```java
     public void savaBitmap(String url, Bitmap bitmap) throws IOException {
@@ -56,7 +56,7 @@
     }
 ```
 
-###网络缓存
+### 网络缓存
 从内存缓存和本地缓存中获取图片
 ```java
     public Bitmap showCacheBitmap(String url) {
