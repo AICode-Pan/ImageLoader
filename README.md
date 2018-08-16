@@ -51,13 +51,12 @@
         fos.close();
     }
 ```
-<br/>
-获取本地缓存的图片<br/>
-```java
+获取本地缓存的图片
+<code>
     public Bitmap getBitmap(String url) {
         return BitmapFactory.decodeFile(getStorageDirectory() + File.separator + getFileName(url));
     }
-```
+<code/>
 
 ### 网络缓存
 从内存缓存和本地缓存中获取图片
@@ -74,9 +73,8 @@
         return null;
     }
 ```
-<br/>
-当内存缓存和网络缓存中不存在，就去网络加载<br/>
-```
+当内存缓存和网络缓存中不存在，就去网络加载
+<code>
     public void downLoader(final String url, final ImageLoaderlistener loaderlistener) {
         if (url != null) {
             final Bitmap bitmap = showCacheBitmap(url);//这里就是从缓存中去找图片
@@ -102,4 +100,4 @@
             }
         }
     }
-```
+<code/>
