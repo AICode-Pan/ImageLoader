@@ -74,7 +74,7 @@
     }
 ```
 当内存缓存和网络缓存中不存在，就去网络加载
-<code>
+```
     public void downLoader(final String url, final ImageLoaderlistener loaderlistener) {
         if (url != null) {
             final Bitmap bitmap = showCacheBitmap(url);//这里就是从缓存中去找图片
@@ -100,4 +100,4 @@
             }
         }
     }
-<code/>
+```
