@@ -52,11 +52,11 @@
     }
 ```
 获取本地缓存的图片
-<code>
+```
     public Bitmap getBitmap(String url) {
         return BitmapFactory.decodeFile(getStorageDirectory() + File.separator + getFileName(url));
     }
-<code/>
+```
 
 ### 网络缓存
 从内存缓存和本地缓存中获取图片
